@@ -1,0 +1,19 @@
+# Ignore native/generated files in language stats
+android/** linguist-vendored
+ios/** linguist-vendored
+build/** linguist-vendored
+*.cpp linguist-vendored
+*.h linguist-vendored
+*.a linguist-vendored
+*.so linguist-vendored
+
+# Prioritize Dart for language detection
+*.dart linguist-detectable
+lib/** linguist-detectable
+
+# Ignore CMake files
+**/CMakeLists.txt linguist-generated
+*.cmake linguist-generated
+
+# Make sure Dart files are counted
+*.dart linguist-detectable
